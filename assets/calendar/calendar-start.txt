@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Erling Larsson//Spare time//SE
+DESCRIPTION:Kalender för samfälligheten Trumpeten
+X-WR-CALDESC:Kalender för samfälligheten Trumpeten
+TIMEZONE-ID:Europe/Stockholm
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+COLOR:1:111:148
+CALSCALE:GREGORIAN
+METHOD:PUBLISH

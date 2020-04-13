@@ -1,0 +1,13 @@
+Hej [NAME]!
+
+Tack för din bokning! Vi hör av oss när bokningen blir definitiv.
+
+Du har angett följande uppgifter:
+[DATE_FROM] - [DATE_TO]
+[NAME]
+[STREET]
+[EMAIL]
+[PHONE]
+[NOTE]
+
+Mvh Trumpeten

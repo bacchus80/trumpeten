@@ -1,0 +1,1 @@
+<?php $CI->layout->trigger_content_section('content'); ?>
