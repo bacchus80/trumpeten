@@ -58,7 +58,7 @@ class YardProxy extends CI_Controller
     }
     
     
-    public function nyheter()
+    public function news()
     {
         $news = array(); //$this->news_model->get_future_news();
         $this->layout->render_view('shared/news', array(
@@ -67,7 +67,7 @@ class YardProxy extends CI_Controller
     }
     
     
-    public function kalender()
+    public function calendar()
     {
         $events = array(); //$this->news_model->get_future_news();
         $this->layout->render_view('shared/events', array(
@@ -76,7 +76,7 @@ class YardProxy extends CI_Controller
     }
     
     
-    public function notiser()
+    public function notes()
     {
         $oldNotes = $this->note_model->get_old_main_notes();
 
@@ -86,6 +86,9 @@ class YardProxy extends CI_Controller
     }
     
     
+    /**
+     * Test view
+     */
     public function ga7()
     {
         $data = array('a' => 'ga7', 'b' => 444);
@@ -100,7 +103,7 @@ class YardProxy extends CI_Controller
     }
     
     
-    function createnote(){
+    function createNote(){
         $note = array(
             'date' => $this->input->post('date',TRUE),
             'titel' => $this->input->post('titel',TRUE),

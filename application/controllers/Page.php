@@ -53,7 +53,7 @@ class Page extends CI_Controller
     }
     
     
-    public function sida($page='')
+    public function page($page='')
     {
 //        echo "visa sida [".$page."]";
     }
@@ -201,7 +201,7 @@ class Page extends CI_Controller
     }    
 
     
-    public function newly_moved_in()
+    public function newlyMovedIn()
     { 
         $this->layout->set_title('Nyinfyttad');
         $this->layout->render_view('page/newly_moved_in',  array('a' => 'Ininfyttad', 'b' => 444));            
@@ -242,7 +242,7 @@ class Page extends CI_Controller
     } 
     
     
-    public function earlier_news()
+    public function earlierNews()
     {        
         $inactiveNews = $this->news_model->get_inactive_news();
         $this->layout->render_view('page/earlier_news',  array(
@@ -344,13 +344,13 @@ class Page extends CI_Controller
     } 
     
     
-    public function booking_confirmation()
+    public function bookingConfirmation()
     {
         $this->layout->render_view('page/booking_confirmation_thanks',  array()); 
     }
     
     
-    public function email_confirmation($hash)
+    public function emailConfirmation($hash)
     {
         $this->db->select('*');
         $this->db->where('hash', $hash);
@@ -390,7 +390,7 @@ class Page extends CI_Controller
     }
     
     
-    public function sida2($page='')
+    public function page2($page='')
     {
         $this->layout->render_view('page/sida2',  array('a' => 11, 'b' => 444));            
     }

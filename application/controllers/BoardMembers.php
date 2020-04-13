@@ -80,7 +80,7 @@ class BoardMembers extends CI_Controller
     }
     
 
-    function createuser()
+    function createUser()
     {
         // todo, only for board members
         $role = $this->user_model::ROLE_GA;
@@ -125,7 +125,7 @@ class BoardMembers extends CI_Controller
     }
 
     
-    function createnote()
+    function createNote()
     {
         $date = $this->input->post('date', TRUE);
         if ($date == "")
@@ -160,7 +160,7 @@ class BoardMembers extends CI_Controller
     }
     
 
-    function createnews()
+    function createNews()
     {
         $news = array(
             'date' => $this->input->post('date', TRUE),
@@ -182,7 +182,7 @@ class BoardMembers extends CI_Controller
     }
 
     
-    function createevent()
+    function createEvent()
     {
         $event = array(
             'start' => $this->input->post('start', TRUE),
@@ -207,7 +207,7 @@ class BoardMembers extends CI_Controller
     }
 
     
-    function createbooking()
+    function createBooking()
     {
 
         $booking = array(
@@ -235,7 +235,7 @@ class BoardMembers extends CI_Controller
     }
 
     
-    function nyheter()
+    function news()
     {
         $oldNews = $this->news_model->getOldNews();
         
@@ -246,7 +246,7 @@ class BoardMembers extends CI_Controller
     }
 
     
-    function notiser() {
+    function notes() {
         $noteColors = $this->note_model->colors();
         $oldNotes = $this->note_model->get_old_main_notes();
 
@@ -257,7 +257,7 @@ class BoardMembers extends CI_Controller
     }
 
     
-    function kalender()
+    function calendar()
     {
         $oldEvents = $this->event_model->get_old_main_event();
         $this->layout->render_view('shared/events', array(
@@ -266,7 +266,7 @@ class BoardMembers extends CI_Controller
     }
 
     
-    function bokningar($listType=false)
+    function bookings($listType=false)
     {
         $createStatus = $this->input->get('status', TRUE);
         $bookings = $this->booking_model->get_future_bookings();
@@ -280,7 +280,7 @@ class BoardMembers extends CI_Controller
     }
 
     
-    function anvandare()
+    function users()
     {
         $userGroupValueList = [
             0 => 'Välj',
@@ -317,7 +317,7 @@ class BoardMembers extends CI_Controller
     }
 
     
-    function installningar($page='')
+    function settings($page='')
     {
         
         $to = 'erlla992@gmail.com';

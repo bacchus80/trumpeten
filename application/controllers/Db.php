@@ -189,7 +189,7 @@ class Db extends CI_Controller
 
     
     
-    function createbooking()
+    function createBooking()
     {
         $booking = array(
             'start' => $this->input->post('start', TRUE),
